@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -123,11 +123,30 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfo-K5-aL6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noughts has won!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFq-eL-lKk">
+                                <rect key="frame" x="74" y="271" width="172" height="26.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26.5" id="8Oo-V4-Etq"/>
+                                    <constraint firstAttribute="width" constant="172" id="afw-Zs-95j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.22856264080672395" green="1" blue="0.11830677879823948" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9V-KV-REb">
+                                <rect key="frame" x="124" y="305" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAQ-c2-xe8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Geo-Co-k65" firstAttribute="top" secondItem="U0T-C6-TGO" secondAttribute="bottom" constant="35.5" id="1eM-MF-B62"/>
                             <constraint firstItem="Geo-Co-k65" firstAttribute="leading" secondItem="LQy-33-KGR" secondAttribute="trailing" constant="26.5" id="5HE-pS-NXD"/>
+                            <constraint firstItem="KFq-eL-lKk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="97H-Mk-tE5"/>
                             <constraint firstItem="ZX8-3l-6HL" firstAttribute="top" secondItem="PzY-Ao-fYq" secondAttribute="bottom" constant="34.5" id="Ga3-wu-W0a"/>
                             <constraint firstItem="xNm-D1-8XM" firstAttribute="top" secondItem="9pl-V0-jgC" secondAttribute="bottom" constant="34.5" id="Ldo-eO-DDA"/>
                             <constraint firstItem="PzY-Ao-fYq" firstAttribute="leading" secondItem="9pl-V0-jgC" secondAttribute="trailing" constant="22.5" id="Pgr-B5-EeF"/>
@@ -136,6 +155,7 @@
                             <constraint firstItem="U0T-C6-TGO" firstAttribute="leading" secondItem="ZX8-3l-6HL" secondAttribute="trailing" constant="26" id="YP7-4S-inN"/>
                             <constraint firstItem="dbg-XB-sk3" firstAttribute="top" secondItem="xNm-D1-8XM" secondAttribute="bottom" constant="35.5" id="cAF-7g-MPS"/>
                             <constraint firstItem="LQy-33-KGR" firstAttribute="leading" secondItem="dbg-XB-sk3" secondAttribute="trailing" constant="22.5" id="dIF-nb-DDj"/>
+                            <constraint firstItem="KFq-eL-lKk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fAB-gb-k17"/>
                             <constraint firstItem="mP0-T1-JYO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fmp-o2-DVD"/>
                             <constraint firstItem="zvu-oL-Q12" firstAttribute="leading" secondItem="PzY-Ao-fYq" secondAttribute="trailing" constant="26.5" id="gUh-PG-Nip"/>
                             <constraint firstItem="PzY-Ao-fYq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hnR-le-Iik"/>
@@ -149,6 +169,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playAgainButton" destination="Q9V-KV-REb" id="KWm-by-spt"/>
+                        <outlet property="winnerLabel" destination="KFq-eL-lKk" id="cl8-7e-rMO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

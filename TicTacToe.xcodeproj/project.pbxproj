@@ -12,6 +12,9 @@
 		DD4AC27B1F8E54770053815A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4AC2791F8E54770053815A /* Main.storyboard */; };
 		DD4AC27D1F8E54770053815A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4AC27C1F8E54770053815A /* Assets.xcassets */; };
 		DD4AC2801F8E54770053815A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4AC27E1F8E54770053815A /* LaunchScreen.storyboard */; };
+		DD4AC2931F8E5B4D0053815A /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4AC2901F8E5B4C0053815A /* cross.png */; };
+		DD4AC2941F8E5B4D0053815A /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4AC2911F8E5B4C0053815A /* nought.png */; };
+		DD4AC2951F8E5B4D0053815A /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4AC2921F8E5B4C0053815A /* board.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DD4AC27C1F8E54770053815A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4AC27F1F8E54770053815A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD4AC2811F8E54770053815A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4AC2901F8E5B4C0053815A /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		DD4AC2911F8E5B4C0053815A /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
+		DD4AC2921F8E5B4C0053815A /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,9 @@
 		DD4AC2691F8E54760053815A = {
 			isa = PBXGroup;
 			children = (
+				DD4AC2921F8E5B4C0053815A /* board.png */,
+				DD4AC2901F8E5B4C0053815A /* cross.png */,
+				DD4AC2911F8E5B4C0053815A /* nought.png */,
 				DD4AC2741F8E54770053815A /* TicTacToe */,
 				DD4AC2731F8E54770053815A /* Products */,
 			);
@@ -125,6 +134,9 @@
 			files = (
 				DD4AC2801F8E54770053815A /* LaunchScreen.storyboard in Resources */,
 				DD4AC27D1F8E54770053815A /* Assets.xcassets in Resources */,
+				DD4AC2931F8E5B4D0053815A /* cross.png in Resources */,
+				DD4AC2941F8E5B4D0053815A /* nought.png in Resources */,
+				DD4AC2951F8E5B4D0053815A /* board.png in Resources */,
 				DD4AC27B1F8E54770053815A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
